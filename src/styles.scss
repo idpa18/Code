@@ -1,0 +1,21 @@
+@import url('./fonts.scss');
+@import './colors';
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: $accent-gradient;
+    height: 100VH;
+    color: $lightgrey;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Muli';
+}
+
+/*background-image: linear-gradient(to top, #ff0844 0%, #ff9191 100%);
+
+#fc5a74
+
+e6ebf0*/
