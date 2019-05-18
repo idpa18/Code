@@ -4,14 +4,22 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: $accent-gradient;
-    height: 100VH;
-    color: $lightgrey;
+    font-size: 100%;
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Muli';
+    font-family: 'Montserrat';
+}
+
+p{
+    font-size: 1.2em
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 2.5em
 }
 
 /*background-image: linear-gradient(to top, #ff0844 0%, #ff9191 100%);
