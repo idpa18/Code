@@ -37,7 +37,7 @@ div.military-fortress_wrapper {
         display: flex;
         //width: calc(100vw * 3);
         transform: translateX(-000vw);
-        transition: all 1s ease-in-out;
+        transition: transform 1s ease-in-out;
 
         div.military-fortress_slide {
             height: 100%;
