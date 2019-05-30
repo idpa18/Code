@@ -1,0 +1,24 @@
+.person-detail_wrapper {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.person-detail_image {
+  float: left;
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.person-detail_text {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 65%;
+  height: 100%;
+  background-color: white;
+}
