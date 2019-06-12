@@ -1,25 +1,26 @@
-
 <div class="menu_toggle-button" (click)="toggleMenuState()">
-  <div class="menu_toggle-button-icon" [ngClass]="{'extended' : menuStateExtended}">
-  </div>
+  <div
+    class="menu_toggle-button-icon"
+    [ngClass]="{ extended: menuStateExtended }"
+  ></div>
 </div>
-<div class="menu_wrapper extended" [ngClass]="{'extended' : menuStateExtended}">
+<div class="menu_wrapper extended" [ngClass]="{ extended: menuStateExtended }">
   <div class="menu_items_wrapper">
-    <a class="menu_item" routerLink="/festung-vitznau">
-      <img src="assets/menu-icons/person.png" alt="">
+    <a class="menu_item" routerLink="/personen">
+      <img src="assets/menu-icons/person.png" alt="" />
       Personen
     </a>
     <a class="menu_item" routerLink="/festung-vitznau">
-      <img src="assets/menu-icons/military-fortress.png" alt="">
+      <img src="assets/menu-icons/military-fortress.png" alt="" />
       Festung Vitznau
     </a>
     <a class="menu_item" routerLink="/festung-vitznau">
-      <img src="assets/menu-icons/map.png" alt="">
+      <img src="assets/menu-icons/map.png" alt="" />
       interaktive Karte
     </a>
   </div>
 </div>
-<div class="menu_second_wrapper" [ngClass]="{'extended' : menuStateExtended}">
+<div class="menu_second_wrapper" [ngClass]="{ extended: menuStateExtended }">
   <div class="menu_second_items_wrapper">
     <a class="menu_item" routerLink="/festung-vitznau">
       Impressum
