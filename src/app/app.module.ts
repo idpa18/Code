@@ -8,6 +8,7 @@ import { PersonOverviewComponent } from './views/person/person-overview/person-o
 import { PersonDetailComponent } from './views/person/person-detail/person-detail.component';
 import { MenuComponent } from './menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     MilitaryFortressComponent,
     PersonOverviewComponent,
     PersonDetailComponent,
-    MenuComponent
+    MenuComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
