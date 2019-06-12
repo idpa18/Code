@@ -1,0 +1,170 @@
+:host {
+
+}
+
+div.menu_wrapper {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    z-index: 100;
+    border-radius: 100%;
+    transition: 
+        height 0.65s ease-in-out, width 0.65s ease-in-out,
+        transform 0.7s ease-in-out,
+        left 0.7s ease-in-out, top 0.7s ease-in-out;
+    
+
+    div.menu_items_wrapper{
+            position: relative;
+            width: calc(100% - 200px);
+            height: calc(100% - 200px);
+            
+        a.menu_item {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: auto;
+            margin: calc( -100px / 2 );
+            clip: rect(1px,1px,1px,1px);
+            overflow: hidden !important;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            font-weight: bolder;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            
+            img {
+                margin: 0 auto; 
+                display: block;
+                margin-bottom: 20px;
+                height: 70px;
+            }
+        }
+    }
+
+    &.extended {
+        width: 1000px;
+        height: 1000px;
+        top: 0px;
+        left: 0px;
+        transform: translate(-50%, -50%);
+        transition: 
+            transform 0.7s ease-in-out,
+            left 0.7s ease-in-out, top 0.7s ease-in-out,
+            height 0.65s 0.05s ease-in-out, width 0.65s 0.05s ease-in-out;
+        
+
+        div.menu_items_wrapper{
+            a.menu_item {
+                clip: auto;
+                opacity: 1;
+                transition: all 0.3s .4s ease-in-out;
+            }
+        }
+    }
+}
+
+div.menu_second_wrapper{
+    z-index: 50;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 0px;
+    width: 0px;
+    transition: all 0.6s .1s ease-in-out;
+    
+    div.menu_second_items_wrapper{
+        position: absolute;
+        width: 30px; height: 30px;
+        bottom: 0px; right: 0px;
+        
+        a.menu_item {
+            position: absolute;
+            right: 50%; bottom: 50%;
+            width: auto;    
+            clip: rect(1px,1px,1px,1px);
+            overflow: hidden !important;
+            margin: calc( -100px / 2);
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            font-weight: bolder;
+            text-decoration: none;
+            color: white;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &.extended {
+        height: 400px;
+        width: 400px;
+        border-top-left-radius: 100%;
+        background: #383838;
+        
+        div.menu_second_items_wrapper{
+            a.menu_item {
+                clip: auto;
+                opacity: 1;
+                transition: all 0.3s .4s ease-in-out;
+            }
+        }
+    }
+}
+
+div.menu_toggle-button {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 20px;
+    width: 20px;
+    margin: 15px;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+
+    div.menu_toggle-button-icon {
+        height: 2px;
+        background: black;
+        position: absolute;
+        width: 20px;
+        transition: all 0.7s ease-in-out;
+
+        &::before {
+            content: '';  
+            height: 2px;
+            background: black;
+            width: 20px;
+            position: absolute;
+            top: -7px;
+            transition: all 0.7s ease-in-out;
+        }
+        &::after {
+            content: '';  
+            height: 2px;
+            background: black;
+            position: absolute;
+            width: 20px;
+            top: 7px;
+            transition: all 0.7s ease-in-out;
+        }
+
+        &.extended {
+            background: white;
+
+            &::before {
+                top: 0px;
+                transform: rotate(135deg)
+            }
+            &::after {
+                top: 0px;
+                transform: rotate(225deg)
+            }
+        }
+    }
+}
