@@ -9,6 +9,7 @@ import { PersonDetailComponent } from './views/person/person-detail/person-detai
 import { MenuComponent } from './menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DivComponent } from './div/div.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     PersonOverviewComponent,
     PersonDetailComponent,
     MenuComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    DivComponent
   ],
   imports: [
     BrowserModule,

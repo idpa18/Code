@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { MilitaryFortressComponent } from "./views/military-fortress/military-fortress.component";
 import { PersonOverviewComponent } from "./views/person/person-overview/person-overview.component";
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DivComponent } from './div/div.component';
 
 const routes: Routes = [
   { path: "festung-vitznau", component: MilitaryFortressComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
+  { path: "div", component: DivComponent }
 ];
 
 @NgModule({
