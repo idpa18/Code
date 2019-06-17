@@ -16,13 +16,13 @@ export class PersonOverviewComponent implements OnInit {
     {
       id: 1,
       personName: "Henri Guisan",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "guisan.jpg",
       facts: ["1874 - 1960", "Schweizer General", "Hoher Beliebtheitsgrad"]
     },
     {
       id: 2,
       personName: "Max Alphons Pfyffer von Altishofen",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "pfyffer.jpg",
       facts: [
         "1834 - 1890",
         "Adelgeschlecht",
@@ -33,7 +33,7 @@ export class PersonOverviewComponent implements OnInit {
     {
       id: 3,
       personName: "Oscar Adolf Germann",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "germann.jpg",
       facts: [
         "1889 - 1979",
         "Mitglied des Generalstabs",
@@ -43,7 +43,7 @@ export class PersonOverviewComponent implements OnInit {
     {
       id: 4,
       personName: "Samuel Gonard",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "gonard.jpg",
       facts: [
         "1896 - 1975",
         "Jurist und Berufsoffizier",

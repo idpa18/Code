@@ -19,7 +19,7 @@ export class PersonDetailComponent implements OnInit {
     {
       id: 1,
       personName: "Henri Guisan",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "guisan.jpg",
       paragraphs: [
         "Henri Guisan wurde am 21. Oktober 1874 in Mézières geboren. Er war der Sohn von Charles-Ernest Guisan, einem Landarzt, und Louise-Jeanne Bérangier. Seine Mutter starb bereits zehn Monate nach seiner Geburt.",
         "Nach dem Gynmasium lebte Henri Guisan für sechs Monate in Deutschland, um sein Deutsch zu verbessern. Danach begann er ein Medizinstudium, später wechselte er aber zu einem landwirtschaftlichen Studium.",
@@ -33,7 +33,7 @@ export class PersonDetailComponent implements OnInit {
     {
       id: 2,
       personName: "Max Alphons Pfyffer von Altishofen",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "pfyffer.jpg",
       paragraphs: [
         "Max Alphons Pfyffer wurde am 12. Oktober 1834 in Altishofen geboren. Er war der Sohn von Heinrich. Die Familie Pfyffer von Altishofen war eine ein Patriziergeschlecht in der früheren Republik Luzern. Die Patrizierfamilien bildeten das Patriziat, welche die wichtigen Ämter in Luzern besetzten. Pfyffer von Altishofen war die mächtigste der Patrizierfamilien. Luzern war damals noch eine freie und souveräne eidgenössische Stadt und Republik. Max Alphons Pfyffer wuchs also im Adel auf.",
         "Pfyffer war Architekt und Hotelier, er erbaute das Grand Hotel Naional in Luzern, welches heute noch immer in Betrieb ist. Das Hotel ist als unter Denkmalschutz, es wird als Kulturgut von nationaler Bedeutung eingestuft.",
@@ -44,7 +44,7 @@ export class PersonDetailComponent implements OnInit {
     {
       id: 3,
       personName: "Oscar Adolf Germann",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "germann.jpg",
       paragraphs: [
         "Oscar Adolf Germann wurde am 19. August 1889 in Frauenfeld geboren. Sein Vater Adolf Germann war ein FDP-Politiker, seine Mutter hiess Hermine Germann. Oscar Germann hatte drei Brüder.",
         "Germann besuchte die Kantonsschule in Frauenfeld, später studierte er Rechtswissenschaft in Zürich, dabei lehrte er einige Semester in Deutschland in Österreich. 1918 wurde er als Experte im Eidgenössischen Volkswirtschaftsdepartement angestellt. Zehn Jahre später, 1928, wurde er Professor für Arbeitsrecht an der Universität Bern. Von 1930 bis 1960 war er Professor für Strafrecht an der Universität Basel.",
@@ -55,7 +55,7 @@ export class PersonDetailComponent implements OnInit {
     {
       id: 4,
       personName: "Samuel Gonard",
-      imagePath: "Fotos_Vitznau_029.jpg",
+      imagePath: "gonard.jpg",
       paragraphs: [
         "Samuel Gonard wurde am 08. Juli 1896 in Neuenburg geboren. Er ist der Sohn vom gleichnamigen Samuel Gonard, einem Händler. Er war ein Schweizer Jurist und Berufsoffizier in der Schweizer Armee.",
         "Samuel Gonard besuchte das Gymnasium in Neuenburg, später studierte er Rechtswissenschaften, das Studium schloss er 1921 ab. Von 1946 bis 1952 war er Dozent für Kriegsgeschichte und Taktik an der Eidgenössischen Technischen Hochschule in Zürich.",
