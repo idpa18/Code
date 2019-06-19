@@ -102,7 +102,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Stromgeneratoren",
-          text : "Die Festung produzierte sämtlichen Strom, welcher benötigt wurde, selbst",
+          text : "Die Festung produzierte sämtlichen Strom, welcher benötigt wurde, selbst.",
           path : "Fotos_Vitznau_010.jpg"
         },
         {
@@ -144,7 +144,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Bettschläge der Soldaten",
-          text : "Die Festung besitzt ingsgesamt 2 Bettschläge für die Soldaten. Zu beginn der Kriegszeit fanden etwa 300 Mann in der Festung Platz, im Verlauf der Jahre sank die Zahl auf 100 Mann",
+          text : "Die Festung besitzt ingsgesamt 2 Bettschläge für die Soldaten. Zu beginn der Kriegszeit fanden etwa 300 Mann in der Festung Platz, im Verlauf der Jahre sank die Zahl auf 100 Mann.",
           path : "Fotos_Vitznau_025.jpg"
         },
         {
@@ -186,13 +186,13 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 8,
           title : "Funk- und Telefonzentrale",
-          text : "Dieser Raum diente als Kommunikationszentrale gegen Aussen. Sie war ständig ",
+          text : "Dieser Raum diente als Kommunikationszentrale gegen Aussen. Sie war ständig besetzt.",
           path : "Fotos_Vitznau_035.jpg"
         },
         {
           id : 12,
           title : "Festungsarzt",
-          text : "Das Festungseigene Spital wäre im Ernstfall für ernste Operationen ausgerüstet gewesen.",
+          text : "Das festungseigene Spital wäre im Ernstfall für Operationen ausgerüstet gewesen.",
           path : "Fotos_Vitznau_043.jpg"
         },
         {
@@ -228,7 +228,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 23,
           title : "Kommandozentrale",
-          text : "Hier wurden die Schüsse berechnet. Mit den vielen Utensilien konnten sie alle Winkel genau ausfinidg machen, welche danach per Funk zu den Schiessständen übermittelt wurden.",
+          text : "Hier wurden die Schüsse berechnet. Mit den vielen Utensilien konnten sie alle Winkel genau ausfinidig machen, welche danach per Funk zu den Schiessständen übermittelt wurden.",
           path : "Fotos_Vitznau_054.jpg"
         },
         {
