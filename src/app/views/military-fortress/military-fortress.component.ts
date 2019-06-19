@@ -78,7 +78,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Werkzeuglager der Festung",
-          text : "Reperaturen sämtlicher Gerätschaften konnten direkt in der festungseigenen Werkstätte durchgeführt werden.",
+          text : "Reparaturen sämtlicher Gerätschaften konnten direkt in der festungseigenen Werkstätte durchgeführt werden.",
           path : "Fotos_Vitznau_008.jpg"
         },
         {
@@ -144,7 +144,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Bettschläge der Soldaten",
-          text : "Die Festung besitzt ingsgesamt 2 Bettschläge für die Soldaten. Zu beginn der Kriegszeit fanden etwa 300 Mann in der Festung Platz, im Verlauf der Jahre sank die Zahl auf 100 Mann.",
+          text : "Die Festung besitzt insgesamt 2 Bettschläge für die Soldaten. Zu Beginn der Kriegszeit fanden etwa 300 Mann in der Festung Platz, im Verlauf der Jahre sank die Zahl auf 100 Mann.",
           path : "Fotos_Vitznau_025.jpg"
         },
         {
@@ -162,7 +162,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 4,
           title : "Waschraum",
-          text : "Um den im Militär geltenden Hygieneforschriften gerecht zu werden, standen diese Waschbecken zur Verfügung.",
+          text : "Um den im Militär geltenden Hygienevorschriften gerecht zu werden, standen diese Waschbecken zur Verfügung.",
           path : "Fotos_Vitznau_026.jpg"
         },
         {
@@ -180,13 +180,13 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 7,
           title : "Offiziersesssaal",
-          text : "Die Bilder, die in jedem Raum des Unterkuntstraks zu finden sind, sollten die fehlenden Fenster ersetzen.",
+          text : "Die Bilder, die in jedem Raum des Unterkunftstraks zu finden sind, sollten die fehlenden Fenster ersetzen.",
           path : "Fotos_Vitznau_030.jpg"
         },
         {
           id : 8,
           title : "Funk- und Telefonzentrale",
-          text : "Dieser Raum diente als Kommunikationszentrale gegen Aussen. Sie war ständig besetzt.",
+          text : "Dieser Raum diente als Kommunikationszentrale gegen aussen. Sie war ständig besetzt.",
           path : "Fotos_Vitznau_035.jpg"
         },
         {
@@ -210,13 +210,13 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 17,
           title : "Krankenzimmer",
-          text : "In diesen Betten hätten sich Kranke und/oder Verunfallte aufhalten können. Insgesammt waren 8 Betten für diesen Zweck vorgesehen.",
+          text : "In diesen Betten hätten sich Kranke und/oder Verunfallte aufhalten können. Insgesamt waren 8 Betten für diesen Zweck vorgesehen.",
           path : "Fotos_Vitznau_047.jpg"
         },
         {
           id : 19,
           title : "Esssaal",
-          text : "Der Esssal war zu Kriegszeiten noch nicht mit Ausstellungsgegenständen bestückt. Trotzdem war es einer der wenigen Räume, welcher auf eine angenehme Temperatur geheizt wurde.",
+          text : "Der Esssaal war zu Kriegszeiten noch nicht mit Ausstellungsgegenständen bestückt. Trotzdem war es einer der wenigen Räume, welcher auf eine angenehme Temperatur geheizt wurde.",
           path : "Fotos_Vitznau_049.jpg"
         },
         {
@@ -228,12 +228,12 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 23,
           title : "Kommandozentrale",
-          text : "Hier wurden die Schüsse berechnet. Mit den vielen Utensilien konnten sie alle Winkel genau ausfinidig machen, welche danach per Funk zu den Schiessständen übermittelt wurden.",
+          text : "Hier wurden die Schüsse berechnet. Mit den vielen Utensilien konnten sie alle Winkel genau ausfindig machen, welche danach per Funk zu den Schiessständen übermittelt wurden.",
           path : "Fotos_Vitznau_054.jpg"
         },
         {
           id : 24,
-          title : "Abdeckungsgebiete der Festungsschiesstände",
+          title : "Abdeckungsgebiete der Festungsschiessstände",
           text : "Hier ist die Abdeckungskarte der verschiedenen Festungen um den Vierwaldstättersee zu sehen. Der rote Bereich wurde von der Festung Vitznau abgedeckt.",
           path : "Fotos_Vitznau_055.jpg"
         },
@@ -246,7 +246,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 28,
           title : "Schleuse: Unterkunftstrakt - Festung",
-          text : "Eine Nachrüstung: Als vermehrt Gasangriffe stattgefunden haben, wurde diesen Dusche errichtet. So wurde sichergestellt, dass die gefährlichen Gase möglichts nicht in den Unterkunftstrakt gelangen konnten.",
+          text : "Eine Nachrüstung: Als vermehrt Gasangriffe stattgefunden haben, wurde diesen Dusche errichtet. So wurde sichergestellt, dass die gefährlichen Gase möglichst nicht in den Unterkunftstrakt gelangen konnten.",
           path : "Fotos_Vitznau_064.jpg"
         },
       ]
@@ -263,8 +263,8 @@ export class MilitaryFortressComponent implements OnInit {
         },
         {
           id : 1,
-          title : "Druckschleussen",
-          text : "Die Schiessstände hätten während ihren Einsätzen einen enormen Druck erzeugt. Mithilfe dieser Schleusen wollte man die Festung von den Schiesständen abriegeln, damit sich der Druck nicht auf die gesamte Festung ausdehnen konnte.",
+          title : "Druck Schleussen",
+          text : "Die Schiessstände hätten während ihren Einsätzen einen enormen Druck erzeugt. Mithilfe dieser Schleusen wollte man die Festung von den Schiessständen abriegeln, damit sich der Druck nicht auf die gesamte Festung ausdehnen konnte.",
           path : "Fotos_Vitznau_084.jpg"
         },
       ]
@@ -341,7 +341,7 @@ export class MilitaryFortressComponent implements OnInit {
         },
         {
           id : 1,
-          title : "Ausssicht über den Vierwaldstättersee",
+          title : "Aussicht über den Vierwaldstättersee",
           text : "Die Aussicht über die Gemeinde Vitznau und dem Vierwaldstättersee.",
           path : "Fotos_Vitznau_082.jpg"
         },
