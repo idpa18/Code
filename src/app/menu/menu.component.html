@@ -1,8 +1,5 @@
 <div class="menu_toggle-button" (click)="toggleMenuState()">
-  <div
-    class="menu_toggle-button-icon"
-    [ngClass]="{ extended: menuStateExtended }"
-  ></div>
+  <div class="menu_toggle-button-icon" [ngClass]="{ extended: menuStateExtended }"></div>
 </div>
 <div class="menu_wrapper extended" [ngClass]="{ extended: menuStateExtended }">
   <div class="menu_items_wrapper">
@@ -22,13 +19,13 @@
 </div>
 <div class="menu_second_wrapper" [ngClass]="{ extended: menuStateExtended }">
   <div class="menu_second_items_wrapper">
-    <a class="menu_item" routerLink="/festung-vitznau">
+    <a class="menu_item" routerLink="/div" fragment="about">
       Impressum
     </a>
-    <a class="menu_item" routerLink="/festung-vitznau">
+    <a class="menu_item" routerLink="/div" fragment="thank">
       Über uns
     </a>
-    <a class="menu_item" routerLink="/festung-vitznau">
+    <a class="menu_item" routerLink="/div" fragment="append">
       Dank
     </a>
   </div>
