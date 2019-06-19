@@ -1,44 +1,66 @@
-<nav id="navbar-example3" class="navbar navbar-light bg-light">
-  <nav class="nav nav-pills flex-column">
-    <a class="nav-link" href="#about">Über uns und unser Projekt</a>
+<div>
+  <nav id="navbar-example3" class="navbar navbar-light bg-light">
     <nav class="nav nav-pills flex-column">
-      <a class="nav-link ml-3 my-1" href="#idpa">IDPA</a>
-      <a class="nav-link ml-3 my-1" href="#bbbden">BBBaden</a>
-      <a class="nav-link ml-3 my-1" href="#group">Gruppe</a>
-    </nav>
-    <a class="nav-link" href="#thank">Dank</a>
-    <a class="nav-link" href="#append">Anhang</a>
-    <nav class="nav nav-pills flex-column">
-      <a class="nav-link ml-3 my-1" href="#impress">Impressum</a>
-      <a class="nav-link ml-3 my-1" href="#sauce">Quellen</a>
+      <a class="nav-link" (click)="navigateTo('about')">Über uns und unser Projekt</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" (click)="navigateTo('idpa')">IDPA</a>
+        <a class="nav-link ml-3 my-1" (click)="navigateTo('bbbaden')">BBBaden</a>
+        <a class="nav-link ml-3 my-1" (click)="navigateTo('group')">Gruppe</a>
+      </nav>
+      <a class="nav-link" (click)="navigateTo('thank')">Dank</a>
+      <a class="nav-link" (click)="navigateTo('append')">Anhang</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" (click)="navigateTo('impress')">Impressum</a>
+        <a class="nav-link ml-3 my-1" (click)="navigateTo('sauce')">Quellen</a>
+      </nav>
     </nav>
   </nav>
-</nav>
 
-<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-  <h4 id="about">Über uns</h4>
-  <h5 id="idpa">IDPA</h5>
-  <p>Was ist eine IDPA?</p>
-  <h5 id="bbbaden">BBBadem</h5>
-  <p>Unsere Schule</p>
-  <h5 id="group">Grupe</h5>
-  <p>Wer sind wir?</p>
-  <h4 id="thank">Dank</h4>
-  <p>An dieser Stelle möchten wir uns bei allen bedanken, die unser während unser Arbeit
-mit Unterlagen, Informationen, Hilfestellungen oder emotional unterstützt haben.
+  <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+    <h4 id="about">Über uns</h4>
+    <h5 id="idpa">IDPA</h5>
+    <p>Was ist eine IDPA?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h5 id="bbbaden">BBBaden</h5>
+    <p>Unsere Schule</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h5 id="group">Grupe</h5>
+    <p>Wer sind wir?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h4 id="thank">Dank</h4>
+    <p>An dieser Stelle möchten wir uns bei allen bedanken, die unser während unser Arbeit
+      mit Unterlagen, Informationen, Hilfestellungen oder emotional unterstützt haben.
 
-Als Erstes bedanken wir uns bei unserer Ansprechsperson für diese Arbeit, Frau Berger.
+      Als Erstes bedanken wir uns bei unserer Ansprechsperson für diese Arbeit, Frau Berger.
 
-Ebenfalls möchten wir ... für die digitalen Kopien der Operationsbefehle danken und
-Erich Steiner für die Führung durch die Festung Vitznau. 
+      Ebenfalls möchten wir ... für die digitalen Kopien der Operationsbefehle danken und
+      Erich Steiner für die Führung durch die Festung Vitznau.
 
-Wir bedanken uns auch bei allen Personen, die unsere Arbeit gegengelesen haben.
+      Wir bedanken uns auch bei allen Personen, die unsere Arbeit gegengelesen haben.
 
-Zu Guter Letzt möchten wir uns bei unseren Familien für ihre Unterstützung bedanken.
-</p>
-  <h4 id="append">Anhang</h4>
-  <h5 id="impress">Impressum</h5>
-  <p>Impressum Text</p>
-  <h5 id="sauce">Quellen</h5>
-  <p>Was woher. Wikipedia</p>
+      Zu Guter Letzt möchten wir uns bei unseren Familien für ihre Unterstützung bedanken.
+    </p>
+    <h4 id="append">Anhang</h4>
+    <h5 id="impress">Impressum</h5>
+    <p>Impressum Text</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h5 id="sauce">Quellen</h5>
+    <p>Was woher. Wikipedia</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
 </div>
