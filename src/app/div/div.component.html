@@ -1,5 +1,5 @@
-<div>
-  <nav id="navbar-example3" class="navbar navbar-light bg-light">
+<div class="row">
+  <nav id="navbar-example3" class="navbar navbar-light bg-light col-2">
     <nav class="nav nav-pills flex-column">
       <a class="nav-link" (click)="navigateTo('about')">Über uns und unser Projekt</a>
       <nav class="nav nav-pills flex-column">
@@ -16,27 +16,44 @@
     </nav>
   </nav>
 
-  <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-    <h4 id="about">Über uns</h4>
-    <h5 id="idpa">IDPA</h5>
+  <div class="col-10" data-spy="scroll" data-target="#navbar-example3" data-offset="0" style="padding: 2rem;">
+    <h3 id="about">Über uns</h3>
+    <h4 id="idpa">IDPA</h4>
     <p>Was ist eine IDPA?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h5 id="bbbaden">BBBaden</h5>
+    <p>
+      Im Rahmen des Lehrplanes der BBBaden für die Matura, ist für jedes Schuljahr eine oder mehrere, grössere oder
+      kleinere interdisziplinäre Arbeiten gedacht.
+      Diese können aus einem Vortag über ein Thema in der Mathematik, einer Recherche zu einem Buch oder einer
+      Präsentation über einen Film mit historischem Hintergrund bestehen.
+      Jeder solchen Arbeit liegt das inhaltliche Gesamtkonzept (das interdisziplinäre Arbeiten in den Fächern) zu
+      Grunde.
+      Über die ersten 3 Jahre werden die Schüler so auf den Höhepunkt dieser Projekte, der IDPA am Ende des 3.
+      Lehrjahres, vorbereitet.
+      Die Durchführung dieser Arbeiten hat zum Ziel, den Schülern nachhaltig ein methodisches Vorgehen, das Verknüpfen
+      von Wissen und Können aus verschiedenen Bereichen und die Planung und anschliessende Durchführung eines Projektes
+      zu lehren.
+    </p>
+    <h4 id="bbbaden">BBBaden</h4>
     <p>Unsere Schule</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h5 id="group">Grupe</h5>
+    <p>
+      En Text über d BBB.
+    </p>
+    <h4 id="group">Grupe</h4>
     <p>Wer sind wir?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h4 id="thank">Dank</h4>
+    <p>Unsere IDPA Gruppe besteht aus 4 Personen.</p>
+    <b>Jäger Stefanie</b>, ich
+    <br>
+    <br>
+    <b>Schmassmann Seya</b>, nit ich
+    <br>
+    <br>
+    <b>Wälti Joel</b>, immer nonit ich
+    <br>
+    <br>
+    <b>Wigger Dario</b>, ich. JK, au nit ich
+    <br>
+    <br>
+    <h3 id="thank">Dank</h3>
     <p>An dieser Stelle möchten wir uns bei allen bedanken, die unser während unser Arbeit
       mit Unterlagen, Informationen, Hilfestellungen oder emotional unterstützt haben.
 
@@ -49,18 +66,42 @@
 
       Zu Guter Letzt möchten wir uns bei unseren Familien für ihre Unterstützung bedanken.
     </p>
-    <h4 id="append">Anhang</h4>
-    <h5 id="impress">Impressum</h5>
+    <h3 id="append">Anhang</h3>
+    <h4 id="impress">Impressum</h4>
     <p>Impressum Text</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h5 id="sauce">Quellen</h5>
-    <p>Was woher. Wikipedia</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h4 id="sauce">Quellen</h4>
+    <p>Hier sind die Quellen aller Bilder, die auf unserer Webseite verwendet wurden.</p>
+    <span class="source-title">Informationen, Bilder Festung Vitznau</span>
+    <div class="source-content">
+      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 2019</span><br>
+      <span class="source-what">Texte: </span><span class="source-person"></span><br>
+      <span class="source-what">Ich han Notize gmacht, wie nennt mer das: </span><span class="source-person">Stefanie
+        Jäger, 2019</span><br>
+      <span class="source-what">Informat: </span><span class="source-person">Erich Steiner, 2019</span><br>
+    </div>
+    <span class="source-title">Portrait Henry Guisan</span>
+    <div class="source-content">
+      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 1990</span><br>
+      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
+    </div>
+    <span class="source-title">Portrait Max Alphons Pfyffer von Altishofen</span>
+    <div class="source-content">
+      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 1800</span><br>
+      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
+    </div>
+    <span class="source-title">Portrait Oscar Adolf Germann</span>
+    <div class="source-content">
+      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 1291</span><br>
+      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
+    </div>
+    <span class="source-title">Portrait Samuel Gonard</span>
+    <div class="source-content">
+      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 3000</span><br>
+      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
+    </div>
   </div>
 </div>
