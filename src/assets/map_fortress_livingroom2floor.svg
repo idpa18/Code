@@ -1,0 +1,40 @@
+
+<svg id="Layer_1" viewBox="0 0 358.4 445.9" >
+	<g id="Path_1" data-name="Path 1" >
+		<polygon fill="#383838" points="283.3,332.3 184.9,233.4 172.6,245.7 165.5,238.5 130.1,273.7 125.9,269.5 165.5,230 172.6,237.2 
+			184.9,225 283.3,323.8 327.5,279.7 110.1,61.4 65,106.4 169.4,211.2 117.5,262.9 113.2,258.7 160.9,211.2 56.5,106.4 110.1,52.9 
+			336,279.8 "/>
+		<rect x="197.2" y="32.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -76.0853 197.3422)" fill="#383838" width="6" height="316.1"/>
+		<rect x="247.8" y="275.3" transform="matrix(0.6936 -0.7203 0.7203 0.6936 -113.8367 288.9304)" fill="#383838" width="69.9" height="6"/>
+		<rect x="170.8" y="148.3" transform="matrix(0.7006 -0.7136 0.7136 0.7006 -52.7364 176.9779)" fill="#383838" width="27.4" height="6"/>
+		<rect x="123.6" y="155" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.1768 146.5665)" fill="#383838" width="36.5" height="6"/>
+		<rect x="246.7" y="228.9" transform="matrix(0.6936 -0.7203 0.7203 0.6936 -86.6311 260.2085)" fill="#383838" width="31.7" height="6"/>
+		<rect x="222.7" y="205.8" transform="matrix(0.6936 -0.7203 0.7203 0.6936 -77.3121 235.7835)" fill="#383838" width="31.7" height="6"/>
+		<rect x="195.8" y="232.5" transform="matrix(0.6936 -0.7203 0.7203 0.6936 -105.2355 223.5032)" fill="#383838" width="28.7" height="6"/>
+		<rect x="243.7" y="215.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -108.6614 249.3664)" fill="#383838" width="6" height="80.9"/>
+	</g>
+	<g>
+		<title>Stromgeneratoren-Raum</title>
+		<circle cx="220" cy="246.3" r="10.3"/>
+	</g>
+	<g>
+		<title>Stromgeneratoren-Raum</title>
+		<circle cx="210.1" cy="181.4" r="10.3"/>
+	</g>
+	<g>
+		<title>Stromgeneratoren-Raum</title>
+		<circle cx="285.6" cy="301.8" r="10.3"/>
+	</g>
+	<g>
+		<title>Stromgeneratoren-Raum</title>
+		<circle cx="141.8" cy="109.4" r="10.3"/>
+	</g>
+	<g>
+		<title>Stromgeneratoren-Raum</title>
+		<circle cx="278.9" cy="247.7" ry="10.3"/>
+	</g>
+	<g>
+		<title>Stromgeneratoren-Raum</title>
+		<circle cx="308.6" cy="276.3" r="10.3"/>
+	</g>
+</svg>

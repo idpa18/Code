@@ -26,13 +26,15 @@ h2, h3, h4 {
     font-family: 'Playfair Display';
 }
 
-a.btn {
+.btn {
     text-transform: uppercase;
     background-color: transparent;
     border-radius: 0px;
     border: 2px solid black;
     color: black;
-    font-size: .75em;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 8px 12px;
 }
 
 /*background-image: linear-gradient(to top, #ff0844 0%, #ff9191 100%);
