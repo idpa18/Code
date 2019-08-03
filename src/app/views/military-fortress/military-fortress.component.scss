@@ -28,7 +28,6 @@ div.military-fortress_wrapper {
                 h1 {
                     color: white;
                     margin-bottom: 10px;
-                    font-size: 3em;
                 }
 
                 p {
@@ -123,17 +122,14 @@ div.military-fortress_wrapper {
                     transform 0.7s ease-in-out;
             }
 
-            span.military-fortress_linkbutton {
-                font-size: 12px;
-                font-weight: bold;
-                cursor: pointer;
+            span.linkbtn {
                 transform: scale(0);
                 transition: 
                     transform 0.7s ease-in-out;
             }
 
             span.military-fortress_descriptiontext {
-                font-size: 15px;
+                font-size: 18px;
                 transform: scale(0);
                 transition: 
                     transform 0.7s ease-in-out;
@@ -162,7 +158,7 @@ div.military-fortress_wrapper {
                         transform 0.7s 0.15s ease-in-out;
                 }
     
-                span.military-fortress_linkbutton {
+                span.linkbtn {
                     transform: scale(1);
                     transition:         
                         transform 0.7s 0.15s ease-in-out;

@@ -4,10 +4,12 @@ import { MilitaryFortressComponent } from "./views/military-fortress/military-fo
 import { PersonOverviewComponent } from "./views/person/person-overview/person-overview.component";
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DivComponent } from './div/div.component';
+import { PersonDetailComponent } from './views/person/person-detail/person-detail.component';
 
 const routes: Routes = [
   { path: "festung-vitznau", component: MilitaryFortressComponent },
   { path: "personen", component: PersonOverviewComponent },
+  { path: "person/:person", component: PersonDetailComponent },
   { path: "home", component: LandingPageComponent },
   {
     path: '',
