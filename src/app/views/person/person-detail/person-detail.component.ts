@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { PersonDetailItem } from "../person-detail/DTO/PersonDetailItem";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: "app-person-detail",
@@ -7,18 +8,18 @@ import { PersonDetailItem } from "../person-detail/DTO/PersonDetailItem";
   styleUrls: ["./person-detail.component.scss"]
 })
 export class PersonDetailComponent implements OnInit {
-  constructor() {}
+  constructor(private _route: ActivatedRoute) {}
 
   ngOnInit() {
-    this._currentPersonDetailItem = this._persons.filter(
-      x => x.id == this.currentIndex
-    )[0];
+    console.log("Test");
+    this._currentPersonDetailItem = this._persons.find(item => item.link == this._route.snapshot.paramMap.get("person"));
   }
 
   private _persons: Array<PersonDetailItem> = [
     {
       id: 1,
       personName: "Henri Guisan",
+      link:"henri-guisan",
       imagePath: "guisan.jpg",
       paragraphs: [
         "Henri Guisan wurde am 21. Oktober 1874 in Mézières geboren. Er war der Sohn von Charles-Ernest Guisan, einem Landarzt, und Louise-Jeanne Bérangier. Seine Mutter starb bereits zehn Monate nach seiner Geburt.",
@@ -34,6 +35,7 @@ export class PersonDetailComponent implements OnInit {
       id: 2,
       personName: "Max Alphons Pfyffer von Altishofen",
       imagePath: "pfyffer.jpg",
+      link:"max-alphons-pfyffer-von-altishofen",
       paragraphs: [
         "Max Alphons Pfyffer wurde am 12. Oktober 1834 in Altishofen geboren. Er war der Sohn von Heinrich. Die Familie Pfyffer von Altishofen war eine ein Patriziergeschlecht in der früheren Republik Luzern. Die Patrizierfamilien bildeten das Patriziat, welche die wichtigen Ämter in Luzern besetzten. Pfyffer von Altishofen war die mächtigste der Patrizierfamilien. Luzern war damals noch eine freie und souveräne eidgenössische Stadt und Republik. Max Alphons Pfyffer wuchs also im Adel auf.",
         "Pfyffer war Architekt und Hotelier, er erbaute das Grand Hotel Naional in Luzern, welches heute noch immer in Betrieb ist. Das Hotel ist als unter Denkmalschutz, es wird als Kulturgut von nationaler Bedeutung eingestuft.",
@@ -45,6 +47,7 @@ export class PersonDetailComponent implements OnInit {
       id: 3,
       personName: "Oscar Adolf Germann",
       imagePath: "germann.jpg",
+      link:"oscar-adolf-germann",
       paragraphs: [
         "Oscar Adolf Germann wurde am 19. August 1889 in Frauenfeld geboren. Sein Vater Adolf Germann war ein FDP-Politiker, seine Mutter hiess Hermine Germann. Oscar Germann hatte drei Brüder.",
         "Germann besuchte die Kantonsschule in Frauenfeld, später studierte er Rechtswissenschaft in Zürich, dabei lehrte er einige Semester in Deutschland in Österreich. 1918 wurde er als Experte im Eidgenössischen Volkswirtschaftsdepartement angestellt. Zehn Jahre später, 1928, wurde er Professor für Arbeitsrecht an der Universität Bern. Von 1930 bis 1960 war er Professor für Strafrecht an der Universität Basel.",
@@ -56,6 +59,7 @@ export class PersonDetailComponent implements OnInit {
       id: 4,
       personName: "Samuel Gonard",
       imagePath: "gonard.jpg",
+      link:"samuel-gonard",
       paragraphs: [
         "Samuel Gonard wurde am 08. Juli 1896 in Neuenburg geboren. Er ist der Sohn vom gleichnamigen Samuel Gonard, einem Händler. Er war ein Schweizer Jurist und Berufsoffizier in der Schweizer Armee.",
         "Samuel Gonard besuchte das Gymnasium in Neuenburg, später studierte er Rechtswissenschaften, das Studium schloss er 1921 ab. Von 1946 bis 1952 war er Dozent für Kriegsgeschichte und Taktik an der Eidgenössischen Technischen Hochschule in Zürich.",
@@ -66,8 +70,7 @@ export class PersonDetailComponent implements OnInit {
     }
   ];
 
-  private _currentPersonDetailItem: PersonDetailItem = this._persons[3];
-  @Input() currentIndex;
+  private _currentPersonDetailItem: PersonDetailItem;
 
   get currentPersonDetailItem(): PersonDetailItem {
     return this._currentPersonDetailItem;

@@ -1,24 +1,31 @@
-.person-detail_wrapper {
-  overflow: hidden;
+.person-detail_outer {
+  padding: 200px;
   height: 100vh;
   width: 100vw;
+  display: flex; 
+  flex-flow: column;
+}
+
+.linkbtn {
+  padding-bottom: 20px;
+}
+
+.person-detail_wrapper {
+  overflow: hidden;
+  display: flex; 
 }
 
 .person-detail_image {
-  float: left;
-  width: 35%;
-  height: 100%;
-  position: absolute;
-  background-size: contain;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: white;
+  margin-right: 50px;
 }
 
 .person-detail_text {
-  float: right;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 65%;
-  height: 100%;
+  width: 50%;
+  margin-left: 50px;
   background-color: white;
+  overflow-y: auto;
 }

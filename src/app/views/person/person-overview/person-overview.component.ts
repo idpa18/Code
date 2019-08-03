@@ -17,12 +17,14 @@ export class PersonOverviewComponent implements OnInit {
       id: 1,
       personName: "Henri Guisan",
       imagePath: "guisan.jpg",
+      link:"henri-guisan",
       facts: ["1874 - 1960", "Schweizer General", "Hoher Beliebtheitsgrad"]
     },
     {
       id: 2,
       personName: "Max Alphons Pfyffer von Altishofen",
       imagePath: "pfyffer.jpg",
+      link:"max-alphons-pfyffer-von-altishofen",
       facts: [
         "1834 - 1890",
         "Adelgeschlecht",
@@ -34,6 +36,7 @@ export class PersonOverviewComponent implements OnInit {
       id: 3,
       personName: "Oscar Adolf Germann",
       imagePath: "germann.jpg",
+      link:"oscar-adolf-germann",
       facts: [
         "1889 - 1979",
         "Mitglied des Generalstabs",
@@ -44,6 +47,7 @@ export class PersonOverviewComponent implements OnInit {
       id: 4,
       personName: "Samuel Gonard",
       imagePath: "gonard.jpg",
+      link:"samuel-gonard",
       facts: [
         "1896 - 1975",
         "Jurist und Berufsoffizier",
@@ -53,44 +57,7 @@ export class PersonOverviewComponent implements OnInit {
     }
   ];
 
-  private _currentPersonOverviewItem: PersonOverviewItem;
-  private _leftOffset: number = 0;
-  private _showDetails: boolean = false;
-
-  get showDetails(): boolean {
-    return this._showDetails;
-  }
-
   get persons(): Array<PersonOverviewItem> {
     return this._persons;
-  }
-
-  get leftOffset(): number {
-    return this._leftOffset;
-  }
-
-  get slidesCSS(): object {
-    return {
-      width: `${this._persons.length * 100}vw`,
-      transform: `translateX(-${this._leftOffset}px)`
-    };
-  }
-
-  public move(direction: number) {
-    let newIndex: number =
-      this._persons.indexOf(this._currentPersonOverviewItem) + direction;
-
-    if (newIndex < 0) {
-      newIndex = this._persons.length - 1;
-    } else if (newIndex > this._persons.length - 1) {
-      newIndex = 0;
-    }
-
-    this._currentPersonOverviewItem = this._persons[newIndex];
-    this._leftOffset = window.innerWidth * newIndex;
-  }
-
-  public showPersonDetails(show: boolean) {
-    this._showDetails = show;
   }
 }
