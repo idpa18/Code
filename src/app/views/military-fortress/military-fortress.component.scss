@@ -1,5 +1,14 @@
 @import '../../../colors';
 
+
+.mapnorth
+{
+    font-family:'Montserrat';
+    font-weight: bold;
+    font-size:22.3798px;
+    fill:#383838;
+}
+
 div.military-fortress_wrapper {
     overflow: hidden;
     height: 100vh;
@@ -31,7 +40,9 @@ div.military-fortress_wrapper {
                 }
 
                 p {
-                    color: white;
+                    background-color: white;
+                    padding: 10px;
+                    color: black;
                    /* column-count: 2; */
                     text-align: justify;
                     font-weight: 500;
@@ -170,6 +181,24 @@ div.military-fortress_wrapper {
                         transform 0.7s 0.15s ease-in-out;
                 }
             }
+        }
+    }
+    div.military-fortress_information-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 50px; 
+        right: 100px;
+        justify-content: center;
+        align-items: center;
+        
+        fa {
+            color: $black;
         }
     }
 }

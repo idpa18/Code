@@ -3,11 +3,13 @@
 
 div.menu_wrapper {
     position: absolute;
+    position: fixed;
     top: 50px;
     left: 50px;
     width: 50px;
     height: 50px;
     background-color: white;
+    box-shadow: 11px 13px 60px -26px rgba(107,107,107,1);
     z-index: 100;
     border-radius: 100%;
     transition: 
@@ -69,19 +71,22 @@ div.menu_wrapper {
 div.menu_second_wrapper{
     z-index: 50;
     position: absolute;
+    position: fixed;
     bottom: 0px;
     right: 0px;
     height: 0px;
     width: 0px;
     transition: all 0.6s .1s ease-in-out;
     border-top-left-radius: 100%;
+    background: #383838;
+    box-shadow: -11px 13px 60px -26px rgba(107,107,107,1);
     
     div.menu_second_items_wrapper{
         position: absolute;
         width: 30px; height: 30px;
         bottom: 0px; right: 0px;
         
-        a.menu_item {
+        div.menu_item {
             position: absolute;
             right: 50%; bottom: 50%;
             width: auto;    
@@ -90,24 +95,24 @@ div.menu_second_wrapper{
             margin: calc( -100px / 2);
             opacity: 0;
             transition: all 0.3s ease-in-out;
-            font-weight: bolder;
-            text-decoration: none;
-            color: white;
-            height: 150px;
-            width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            a {
+                font-weight: bolder;
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 
     &.extended {
-        height: 400px;
-        width: 400px;
-        background: #383838;
+        height: 350px;
+        width: 350px;
         
         div.menu_second_items_wrapper{
-            a.menu_item {
+            div.menu_item {
                 clip: auto;
                 opacity: 1;
                 transition: all 0.3s .4s ease-in-out;
@@ -118,6 +123,7 @@ div.menu_second_wrapper{
 
 div.menu_toggle-button {
     position: absolute;
+    position: fixed;
     top: 50px;
     left: 50px;
     height: 20px;

@@ -19,17 +19,25 @@
 </div>
 <div class="menu_second_wrapper" [ngClass]="{ extended: menuStateExtended }">
   <div class="menu_second_items_wrapper">
-    <a class="menu_item" routerLink="/">
-      Home
-    </a>
-    <a class="menu_item" routerLink="/div" fragment="about">
-      Impressum
-    </a>
-    <a class="menu_item" routerLink="/div" fragment="thank">
-      Über uns
-    </a>
-    <a class="menu_item" routerLink="/div" fragment="append">
-      Dank
-    </a>
+    <div class="menu_item">
+      <a routerLink="/">
+        Home
+      </a>
+    </div>
+    <div class="menu_item">
+      <a routerLink="/div" fragment="about">
+        Impressum
+      </a>
+    </div>
+    <div class="menu_item">
+      <a routerLink="/div" fragment="thank">
+        Über uns
+      </a>
+    </div>
+    <div class="menu_item">
+      <a outerLink="/div" fragment="append">
+        Dank
+      </a>
+    </div>
   </div>
 </div>

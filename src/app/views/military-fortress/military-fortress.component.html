@@ -22,6 +22,9 @@
       </div>
   </div>
 
+  <div class="military-fortress_information-icon" (click)="showInfo()">
+    <fa name="info" [inverse]="false"></fa>
+  </div>
   <div class="military-fortress_map" [ngClass]="{'extended' : mapStateExtended}">
     <div class="military-fortress_content">
       <ng-container *ngIf="isMapStateOverview()">
@@ -39,6 +42,9 @@
                               'strokeaccent' : true}"
             [attr.cx]="item.cx" [attr.cy]="item.cy" r="9.48" />
           </g>
+          <polygon fill="#383838" points="54.6,385.1 65.4,370 52.2,317.9 "/>
+          <polygon fill="#383838" points="81.9,378.3 65.2,370.2 52,318.1 "/>
+          <text transform="matrix(1 0 0 1 60.8941 404.9506)" class="mapnorth">N</text>
         </svg>
         <span class="military-fortress_descriptiontext">
             Übersicht
@@ -68,6 +74,9 @@
                                 'strokeaccent' : true}"
                                 [attr.cx]="item.cx" [attr.cy]="item.cy" r="10.3"/>
           </g>
+          <polygon fill="#383838" points="54.6,385.1 65.4,370 52.2,317.9 "/>
+          <polygon fill="#383838" points="81.9,378.3 65.2,370.2 52,318.1 "/>
+          <text transform="matrix(1 0 0 1 60.8941 404.9506)" class="mapnorth">N</text>
         </svg>
         <span class="military-fortress_descriptiontext">
             Unterkunftstrakt - 1. Stockwerk
@@ -101,6 +110,9 @@
                                   'strokeaccent' : true}"
                                   [attr.cx]="item.cx" [attr.cy]="item.cy" r="10.3"/>
             </g>
+            <polygon fill="#383838" points="54.6,385.1 65.4,370 52.2,317.9 "/>
+            <polygon fill="#383838" points="81.9,378.3 65.2,370.2 52,318.1 "/>
+            <text transform="matrix(1 0 0 1 60.8941 404.9506)" class="mapnorth">N</text>
           </svg>  
         <span class="military-fortress_descriptiontext">
             Unterkunftstrakt - 2. Stockwerk

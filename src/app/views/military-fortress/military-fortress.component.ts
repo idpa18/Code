@@ -19,6 +19,21 @@ export class MilitaryFortressComponent implements OnInit {
 
   private _fortressItems : Array<FortressItem> = [
     {
+      roomId : 0,
+      roomName : "",
+      mapState : MapState.overview,
+      cy : -50,
+      cx : -50,
+      slides : [
+        {
+          id : 1,
+          title : "Unser Ausflug zur Festung Vitznau",
+          text : "Während unserer Führung durch die Festung Vitznau konnten wir zahlreiche Bilder schiessen, welche auf dieser Seite interaktiv dargestellt sind. Der Grundriss der Festung, der über den Button - oben rechts - zu erreichen ist, hilft bei der Navigation durch die vielen Räume und Gänge der Festung.",
+          path : "Fotos_Vitznau_090.jpg"
+        },
+      ]
+    },
+    {
       roomId : 1,
       roomName : "Eingangsbereich",
       mapState : MapState.overview,
@@ -28,7 +43,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Schutz des Eingangs",
-          text : "Damit im Falle eines Befalls der Festung via Haupteingang die Gegner nicht freien Zugang zum Bunker besitzen, wurde dieses Gewehr installiert. Zudem besitzt der Hauptgang der Festung eine Krümmung nach den ersten hundert Metern, damit Gegner nicht von dem Entrée in die gesamte Festung schiessen konnten.",
+          text : "Damit im Falle eines Befalls der Festung via Haupteingang die Gegner nicht freien Zugang zum Bunker besassen, wurde dieses Gewehr installiert. Zudem besitzt der Hauptgang der Festung eine Krümmung nach den ersten hundert Metern, damit Gegner nicht von dem Entrée in die gesamte Festung schiessen konnten.",
           path : "Fotos_Vitznau_002.jpg"
         },
         {
@@ -70,7 +85,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 2,
           title : "Waffendepot",
-          text : "Die Waffen der Soldaten wurden im Gang zu dem Unterkunftstrakt gelagert, um im Falle eines Angriffes sofortige Bereitschaft gewährleisten zu können",
+          text : "Die Waffen der Soldaten wurden im Gang zu dem Unterkunftstrakt gelagert, um im Falle eines Angriffes sofortige Bereitschaft gewährleisten zu können.",
           path : "Fotos_Vitznau_065.jpg"
         },
         {
@@ -91,7 +106,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Werkzeuglager der Festung",
-          text : "Reparaturen sämtlicher Gerätschaften konnten direkt in der festungseigenen Werkstätte durchgeführt werden.",
+          text : "Reparaturen sämtlicher Gerätschaften konnten direkt in der eigenen Werkstätte durchgeführt werden.",
           path : "Fotos_Vitznau_008.jpg"
         },
         {
@@ -179,7 +194,7 @@ export class MilitaryFortressComponent implements OnInit {
         },
         {
           id : 1,
-          title : "Druck Schleussen",
+          title : "Druckschleusen",
           text : "Die Schiessstände hätten während ihren Einsätzen einen enormen Druck erzeugt. Mithilfe dieser Schleusen wollte man die Festung von den Schiessständen abriegeln, damit sich der Druck nicht auf die gesamte Festung ausdehnen konnte.",
           path : "Fotos_Vitznau_084.jpg"
         },
@@ -231,12 +246,12 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Schiessstand mit Besatzung",
-          text : "Im Ernstfall hätte jede 4 Sekunde einen Schuss die Festung verlassen können. Dabei war das Tragen wegen Vergiftungsgefahr obligatorisch",
+          text : "Im Ernstfall hätte jede 4 Sekunde einen Schuss die Festung verlassen können. Dabei war das Tragen von Gasmasken wegen Vergiftungsgefahr obligatorisch.",
           path : "Fotos_Vitznau_072.jpg"
         },
         {
           id : 1,
-          title : "Schusseinsatz in Richtung Aussen.",
+          title : "Schusseinsatz in Richtung aussen",
           text : "",
           path : "Fotos_Vitznau_077.jpg"
         },
@@ -252,7 +267,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Weg zum Beobachtungsposten",
-          text : "Die lange Treppe führte zum einzigen Ort der Festung, der einen Blick nach aussen besass.",
+          text : "Die lange Treppe führt zum einzigen Ort der Festung, der einen Blick nach aussen besitzt.",
           path : "Fotos_Vitznau_080.jpg"
         },
       ]
@@ -267,7 +282,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Beobachtungsposten",
-          text : "Der einzige Ort, welcher ein Blick nach Aussen verfügte. Der Ausguck war immer zu schliessen, wenn er nicht benötigt wurde.",
+          text : "Der einzige Ort, welcher ein Blick nach Aussen verfügt. Der Ausguck war immer zu schliessen, wenn er nicht benötigt wurde.",
           path : "Fotos_Vitznau_081.jpg"
         },
         {
@@ -331,7 +346,7 @@ export class MilitaryFortressComponent implements OnInit {
     },
     {
       roomId : 17,
-      roomName : "Festunsspital",
+      roomName : "Festungsspital",
       mapState : MapState.livingroom1floor,
       cy : 242.3,
       cx : 269.4,
@@ -339,7 +354,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Festungsarzt",
-          text : "Das festungseigene Spital wäre im Ernstfall für Operationen ausgerüstet gewesen.",
+          text : "Das Spital wäre im Ernstfall für Operationen ausgerüstet gewesen.",
           path : "Fotos_Vitznau_043.jpg"
         },
         {
@@ -402,7 +417,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 2,
           title : "Schleuse: Unterkunftstrakt - Festung",
-          text : "Eine Nachrüstung: Als vermehrt Gasangriffe stattgefunden haben, wurde diesen Dusche errichtet. So wurde sichergestellt, dass die gefährlichen Gase möglichst nicht in den Unterkunftstrakt gelangen konnten.",
+          text : "Eine Nachrüstung: Als vermehrt Gasangriffe stattgefunden haben, wurde diese Dusche errichtet. So wurde sichergestellt, dass die gefährlichen Gase möglichst nicht in den Unterkunftstrakt gelangen konnten.",
           path : "Fotos_Vitznau_064.jpg"
         },
       ]
@@ -452,8 +467,8 @@ export class MilitaryFortressComponent implements OnInit {
       slides : [
         {
           id : 1,
-          title : "Bettschläge des Kommandanten",
-          text : "___",
+          title : "Schlafzimmer des Kommandanten",
+          text : "Das Zimmer ist im Vergleich zu den Anderen gerade ein Luxuszimmer.",
           path : "Fotos_Vitznau_032.jpg"
         },
       ]
@@ -510,7 +525,7 @@ export class MilitaryFortressComponent implements OnInit {
       ]
     },
   ]
-  
+    
   get fortressItemsOverview() : Array<FortressItem> {
     return this._fortressItems.filter(
       item => item.mapState == MapState.overview
@@ -608,6 +623,10 @@ export class MilitaryFortressComponent implements OnInit {
 
   public changeMap(mapId: number){
     this._mapState = mapId;
+  }
+
+  public showInfo(){
+    this.__currentFortressItem = this._fortressItems[0];
   }
 }
 export enum MapState {

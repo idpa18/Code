@@ -1,107 +1,75 @@
-<div class="row">
-  <nav id="navbar-example3" class="navbar navbar-light bg-light col-2">
-    <nav class="nav nav-pills flex-column">
-      <a class="nav-link" (click)="navigateTo('about')">Über uns und unser Projekt</a>
-      <nav class="nav nav-pills flex-column">
-        <a class="nav-link ml-3 my-1" (click)="navigateTo('idpa')">IDPA</a>
-        <a class="nav-link ml-3 my-1" (click)="navigateTo('bbbaden')">BBBaden</a>
-        <a class="nav-link ml-3 my-1" (click)="navigateTo('group')">Gruppe</a>
+<div class="navigation">
+  <nav class="main">
+      <a (click)="navigateTo('about')" [class.active]="fragment == 'about'">Über uns und unser Projekt</a>
+      <nav>
+        <a (click)="navigateTo('idpa')" [class.active]="fragment == 'idpa'">IDPA</a>
+        <a (click)="navigateTo('group')" [class.active]="fragment == 'group'">Unsere Gruppe</a>
       </nav>
-      <a class="nav-link" (click)="navigateTo('thank')">Dank</a>
-      <a class="nav-link" (click)="navigateTo('append')">Anhang</a>
-      <nav class="nav nav-pills flex-column">
-        <a class="nav-link ml-3 my-1" (click)="navigateTo('impress')">Impressum</a>
-        <a class="nav-link ml-3 my-1" (click)="navigateTo('sauce')">Quellen</a>
+      <a (click)="navigateTo('thank')" [class.active]="fragment == 'thank'">Dank</a>
+      <a (click)="navigateTo('append')" [class.active]="fragment == 'append'">Anhang</a>
+      <nav>
+        <a (click)="navigateTo('impress')" [class.active]="fragment == 'impress'">Impressum</a>
+        <a (click)="navigateTo('source')" [class.active]="fragment == 'source'">Quellen</a>
       </nav>
-    </nav>
   </nav>
+</div>
+<div class="content" data-spy="scroll" data-target="#navbar-example3" data-offset="0" style="padding: 2rem;">
+  <h2 id="about">Über uns und unser Projekt</h2>
+  <h3 id="idpa">Was ist eine IDPA?</h3>
+  <p>
+    Im Rahmen des Matura-Lehrplanes der Berufsbildung Baden sind für jedes Schuljahr einige kleinere interdisziplinäre Arbeiten angedacht.
+    Diese Arbeiten beinhalten jeweils das Erarbeiten eines Produktes in Form einer Präsentation oder einer Dokumentation über ein interdisziplinäres Thema.
+    Über die ersten 3 Jahre werden die Schüler so auf den Höhepunkt dieser Projekte, der IDPA, vorbereitet. Diese steht jeweils im 6. und 7. Semester der Lehre an.
+    Die Durchführung dieser Arbeiten hat zum Ziel, den Schülern nachhaltig ein methodisches Vorgehen, das Verknüpfen
+    von Wissen und Können aus verschiedenen Bereichen und die Planung und anschliessende Durchführung eines Projektes
+    zu lehren.
+  </p>
+  <h3 id="group">Unsere Gruppe</h3>
+  <img src="/assets/fortress/Fotos_Vitznau_090.jpg" width="900" alt="">
+  <p>v. l. n. r. Erich Steiner, Dario Wigger, Joel Wälti, Stefanie Jäger und Seya Schmassmann</p>
+  <br>
+  <p>Da wir eine Gruppe bestehen aus vier lernenden Applikationsentwicklerinnen und -entwickler sind, entschieden wir uns eine Webseite zu realisieren. </p>
+  <br>
+  <h2 id="thank">Dank</h2>
+  <p>An dieser Stelle möchten wir uns bei allen bedanken, die unser während unserer Arbeit
+    mit Unterlagen, Informationen und Hilfestellungen versorgt haben.
 
-  <div class="col-10" data-spy="scroll" data-target="#navbar-example3" data-offset="0" style="padding: 2rem;">
-    <h3 id="about">Über uns</h3>
-    <h4 id="idpa">IDPA</h4>
-    <p>Was ist eine IDPA?</p>
+    Speziell in Erwähnung zu ziehen ist unsere Ansprechperson und Mentorin unserer Arbeit, Frau Berger.
+
+    Für die kostenfreie und sehr spannende Führung durch die Festung Vitznau möchten wir uns bei Erich Steiner sowie dem gesamten Festungsverein Vitznau ausserordentlich bedanken.
+
+
+  </p>
+  <h2 id="append">Anhang</h2>
+  <h3 id="source">Quellen</h3>
+  <h3 id="impress">Impressum</h3>
+  <p>Verantwortlich für den Inhalt von "eine-wehrhafte-schweiz.kairos-solutions.ch":</p>
+
+  <p><b>Seya Schmassmann</b><br>
+    Lättenweg 15 <br>
+    5504 Othmarsingen <br>
+    seya.schmassmann@stud.bbbaden.ch</p>
+
+  <p><b>Stefanie Jäger</b><br>
+    Mattenweg 11<br>
+    5702 Niederlenz AG <br>
+    stefanie.jaeger@stud.bbbaden.ch</p>
+
+  <p><b>Dario Wigger</b><br>
+    Seilersgrabeweg 14 <br>
+    5413 Birmenstorf <br>
+    dario.wigger@stud.bbbaden.ch</p>
+
+  <p><b>Joel Wälti</b><br>
+    Neue Aarauerstrasse 105B<br>
+    5034 Suhr<br>
+    joel.waelit@stud.bbbaden.ch</p>
+
+
     <p>
-      Im Rahmen des Lehrplanes der BBBaden für die Matura, ist für jedes Schuljahr eine oder mehrere, grössere oder
-      kleinere interdisziplinäre Arbeiten gedacht.
-      Diese können aus einem Vortag über ein Thema in der Mathematik, einer Recherche zu einem Buch, einer
-      Präsentation über einen Film mit historischem Hintergrund und anderen Afuträgen in diesem Format bestehen.
-      Jeder solchen Arbeit liegt das inhaltliche Gesamtkonzept (das interdisziplinäre Arbeiten in den Fächern) zu
-      Grunde.
-      Über die ersten 3 Jahre werden die Schüler so auf den Höhepunkt dieser Projekte, der IDPA am Ende des 3.
-      Lehrjahres, vorbereitet.
-      Die Durchführung dieser Arbeiten hat zum Ziel, den Schülern nachhaltig ein methodisches Vorgehen, das Verknüpfen
-      von Wissen und Können aus verschiedenen Bereichen und die Planung und anschliessende Durchführung eines Projektes
-      zu lehren.
+      Alle Texte der Seite wurden durch uns erfasst. 
+      Die Fotos der Festung Vitznau wurden durch uns aufgenommen, die Quelle sämtlicher anderer Bilder sind dem Quellenverzeichnis zu entnehmen.
+      Alle Quellen wurden in unserem obenstehenden Quellenverzeichnis sorgfältig abgelegt. 
+      Für den Inhalt unserer Quellen können wir keine Garantie übernehmen, wendeten jedoch höchste Sorgfalt bei der Wahl der Quellen an. Bei Änderungen der Quell-Informationen erfolgt durch uns keine Anpassung.
     </p>
-    <h4 id="bbbaden">BBBaden</h4>
-    <p>Unsere Schule</p>
-    <p>
-      En Text über d BBB.
-    </p>
-    <h4 id="group">Grupe</h4>
-    <p>Wer sind wir?</p>
-    <p>Unsere IDPA Gruppe besteht aus 4 Personen.</p>
-    <b>Jäger Stefanie</b>, ich
-    <br>
-    <br>
-    <b>Schmassmann Seya</b>, nit ich
-    <br>
-    <br>
-    <b>Wälti Joel</b>, immer nonit ich
-    <br>
-    <br>
-    <b>Wigger Dario</b>, ich. JK, au nit ich
-    <br>
-    <br>
-    <h3 id="thank">Dank</h3>
-    <p>An dieser Stelle möchten wir uns bei allen bedanken, die unser während unser Arbeit
-      mit Unterlagen, Informationen, Hilfestellungen oder emotional unterstützt haben.
-
-      Als Erstes bedanken wir uns bei unserer Ansprechsperson für diese Arbeit, Frau Berger.
-
-      Ebenfalls möchten wir ... für die digitalen Kopien der Operationsbefehle danken und
-      Erich Steiner für die Führung durch die Festung Vitznau.
-
-      Wir bedanken uns auch bei allen Personen, die unsere Arbeit gegengelesen haben.
-
-      Zu Guter Letzt möchten wir uns bei unseren Familien für ihre Unterstützung bedanken.
-    </p>
-    <h3 id="append">Anhang</h3>
-    <h4 id="impress">Impressum</h4>
-    <p>Impressum Text</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h4 id="sauce">Quellen</h4>
-    <p>Hier sind die Quellen aller Bilder, die auf unserer Webseite verwendet wurden.</p>
-    <span class="source-title">Informationen, Bilder Festung Vitznau</span>
-    <div class="source-content">
-      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 2019</span><br>
-      <span class="source-what">Texte: </span><span class="source-person"></span><br>
-      <span class="source-what">Ich han Notize gmacht, wie nennt mer das: </span><span class="source-person">Stefanie
-        Jäger, 2019</span><br>
-      <span class="source-what">Informat: </span><span class="source-person">Erich Steiner, 2019</span><br>
-    </div>
-    <span class="source-title">Portrait Henry Guisan</span>
-    <div class="source-content">
-      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 1990</span><br>
-      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
-    </div>
-    <span class="source-title">Portrait Max Alphons Pfyffer von Altishofen</span>
-    <div class="source-content">
-      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 1800</span><br>
-      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
-    </div>
-    <span class="source-title">Portrait Oscar Adolf Germann</span>
-    <div class="source-content">
-      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 1291</span><br>
-      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
-    </div>
-    <span class="source-title">Portrait Samuel Gonard</span>
-    <div class="source-content">
-      <span class="source-what">Photograph: </span><span class="source-person">Seya Schmassmann, 3000</span><br>
-      <span class="source-what">Website: </span><span class="source-person">goggle.com</span><br>
-    </div>
-  </div>
 </div>
