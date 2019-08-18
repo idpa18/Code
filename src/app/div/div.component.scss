@@ -1,12 +1,30 @@
-.source-title {
-  font-weight: bold;
-  display: block;
-}
+:host {
+  display: grid;
+  grid-template-columns: 300px auto;padding: 50px;
+  height: 100vh;
+  overflow: hidden;
 
-.source-content {
-  margin-left: 2rem;
+  .navigation {
+    nav.main {
+      line-height: 2;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
 
-  .source-person {
-    font-style: italic
+      nav {
+        padding-left: 30px;
+      }
+
+      a {
+        display: block;
+        
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .content {
+    overflow-y: auto;
   }
 }

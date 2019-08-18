@@ -1,41 +1,22 @@
 <div class="person-overview_wrapper">
-  <div class="person-overview_slides" [ngStyle]="slidesCSS">
+  <div class="person-overview_slides">
     <div
       *ngFor="let person of persons"
-      class="person-overview_slide"
-      [ngStyle]="{
-        backgroundImage: 'url(assets/person/' + person.imagePath + ')'
-      }"
-    >
-      <div class="person-fact-sheet" *ngIf="!showDetails">
+      class="person-overview_slide">
+      <div class="person-image-wrapper">
+        <div class="person-image"
+          [ngStyle]="{ backgroundImage: 'url(assets/person/' + person.imagePath + ')' }">
+        </div>
+      </div>
+      <div class="person-fact-sheet">
         <h1>{{ person.personName }}</h1>
         <ul>
           <li *ngFor="let fact of person.facts">{{ fact }}</li>
         </ul>
-        <a (click)="showPersonDetails(true)"
-          >Mehr Informationen zu {{ person.personName }}</a
-        >
       </div>
-      <app-person-detail
-        [currentIndex]="person.id"
-        *ngIf="showDetails"
-      ></app-person-detail>
-    </div>
-  </div>
-
-  <div class="person-overview_slideshow_buttons">
-    <div
-      *ngIf="showDetails"
-      class="person-overview_slideshow_button"
-      (click)="showPersonDetails(false)"
-    >
-      <fa name="times"></fa>
-    </div>
-    <div class="person-overview_slideshow_button" (click)="move(-1)">
-      <fa name="arrow-left"></fa>
-    </div>
-    <div class="person-overview_slideshow_button" (click)="move(1)">
-      <fa name="arrow-right"></fa>
+      <div class="person-button">
+        <a  [routerLink]="'/person/' + person.link" class="btn">Mehr erfahren</a>
+      </div>
     </div>
   </div>
 </div>

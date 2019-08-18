@@ -33,13 +33,9 @@ export class MenuComponent implements OnInit {
   private _menuStateExtended : boolean;
   get menuStateExtended() : boolean { return this._menuStateExtended; }
 
-  private toggleMenuState(){
+  public toggleMenuState(){
     this._menuStateExtended = !this._menuStateExtended;
   }
   //#endregion
-
-  test(){
-    alert("TEST");  
-  }
 
 }

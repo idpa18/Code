@@ -21,7 +21,7 @@ export class DivComponent implements OnInit, AfterViewInit {
 
   navigateTo(fragment: string) {
     try {
-      console.log(fragment);
+      this.fragment = fragment;
       document.querySelector('#' + fragment).scrollIntoView();
     } catch (e) { }
   }

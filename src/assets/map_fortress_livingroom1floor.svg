@@ -1,0 +1,43 @@
+
+<svg viewBox="0 0 358.4 445.9">
+<style type="text/css">
+	.st0{fill:#010101;}
+	.st1{fill:#383938;}
+</style>
+<g id="Path_1" data-name="Path 1" >
+	<polygon fill="#383838" points="285,333.1 186.6,234.3 174.3,246.6 167.1,239.4 131.8,274.6 127.5,270.3 167.1,230.9 174.3,238.1 
+		186.6,225.8 285,324.6 329.2,280.6 111.8,62.3 66.6,107.3 171,212.1 119.1,263.8 114.9,259.5 162.6,212.1 58.1,107.2 111.8,53.8 
+		337.7,280.6 "/>
+	<rect x="191.4" y="77.1" transform="matrix(0.7061 -0.7081 0.7081 0.7061 -78.3918 193.9025)" fill="#383838" width="6" height="228.6"/>
+	<rect x="80" y="107.5" transform="matrix(0.6953 -0.7187 0.7187 0.6953 -44.4546 116.2383)" fill="#383838" width="69.7" height="6"/>
+	<rect x="127.8" y="114.6" transform="matrix(0.7006 -0.7135 0.7135 0.7006 -40.2587 139.1964)" fill="#383838" width="35.9" height="6"/>
+	<rect x="163.9" y="150.6" transform="matrix(0.7114 -0.7028 0.7028 0.7114 -55.4726 172.0285)" fill="#383838" width="35.7" height="6"/>
+	<rect x="212.4" y="199" transform="matrix(0.7006 -0.7135 0.7135 0.7006 -75.236 224.6522)" fill="#383838" width="35.4" height="6"/>
+	<rect x="240.9" y="267.2" transform="matrix(0.6936 -0.7203 0.7203 0.6936 -110.1312 281.4926)" fill="#383838" width="69.9" height="6"/>
+	<rect x="233.8" y="220" transform="matrix(0.7006 -0.7136 0.7136 0.7006 -83.8064 246.2192)" fill="#383838" width="35.4" height="6"/>
+</g>
+<g>
+	<title>Heizungsraum</title>
+	<circle cx="162.4" cy="133.9" r="10.3"/>
+</g>
+<g>
+	<title>Stromgeneratoren-Raum</title>
+	<circle cx="101.6" cy="93.7" r="10.3"/>
+</g>
+<g>
+	<title>Unterkunftstrakt</title>
+	<circle cx="206.7" cy="179" r="10.4"/>
+</g>
+<g>
+	<title>Stromgeneratoren-Raum</title>
+	<circle cx="269.4" cy="242.3" r="10.3"/>
+</g>
+<g>
+	<title>Stromgeneratoren-Raum</title>
+	<circle cx="292.4" cy="289.1" r="10.3"/>
+</g>
+<g>
+	<title>Stromgeneratoren-Raum</title>
+	<circle cx="240.4" cy="212.3" r="10.3" />
+</g>
+</svg>

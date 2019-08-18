@@ -1,3 +1,35 @@
-.card-columns {
-    column-count: 2;
+.row{
+    margin: 0px auto;
+    max-width: 1140px;
+}
+
+.text {
+    margin-bottom: 3rem !important;
+}
+
+.cardparent {
+    display: flex;
+    line-height: 1.5;
+    margin-bottom: 100px;
+    
+    .card {
+        width: 100%;
+        margin: 0px 25px;
+        height: 100%;
+        background-color: #f7f7f7;
+
+        .card-img-top {
+            width: 100%;
+        }
+
+        .card-body{
+            padding: 0px 25px 20px 25px;
+        }
+
+        .card-footer {
+            bottom: 0px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+    }
 }

@@ -1,5 +1,14 @@
 @import '../../../colors';
 
+
+.mapnorth
+{
+    font-family:'Montserrat';
+    font-weight: bold;
+    font-size:22.3798px;
+    fill:#383838;
+}
+
 div.military-fortress_wrapper {
     overflow: hidden;
     height: 100vh;
@@ -28,11 +37,12 @@ div.military-fortress_wrapper {
                 h1 {
                     color: white;
                     margin-bottom: 10px;
-                    font-size: 3em;
                 }
 
                 p {
-                    color: white;
+                    background-color: white;
+                    padding: 10px;
+                    color: black;
                    /* column-count: 2; */
                     text-align: justify;
                     font-weight: 500;
@@ -63,8 +73,7 @@ div.military-fortress_wrapper {
         justify-content: center;
         align-items: center;
         background-color: white;
-        border-radius: 100px;
-        border-top-right-radius: 100px;
+        border-radius: 20px;
         position: absolute;
         height: 40px;
         width: 40px;
@@ -72,8 +81,7 @@ div.military-fortress_wrapper {
         top: 50px;
         transition: 
             height 0.7s 0.15s ease-in-out, width 0.7s 0.15s ease-in-out,
-            border-radius 0.85s ease-in-out,
-            border-top-right-radius 0.3s 0.7s;
+            border-radius 0.85s ease-in-out;
 
     
         div.military-fortress_map_toggle-icon {
@@ -100,10 +108,12 @@ div.military-fortress_wrapper {
             width: 100%;
             height: 100%;
             padding: 20px;
+            display: flex;
+            flex-flow: column;
 
             svg {
-                height: 100%;
                 width: 100%;
+                height: 100%;
 
                 .strokeaccent {
                     stroke:#ff7272;
@@ -118,6 +128,22 @@ div.military-fortress_wrapper {
                 .fillnone {
                     fill: white;
                 }
+                transform: scale(0);
+                transition: 
+                    transform 0.7s ease-in-out;
+            }
+
+            span.linkbtn {
+                transform: scale(0);
+                transition: 
+                    transform 0.7s ease-in-out;
+            }
+
+            span.military-fortress_descriptiontext {
+                font-size: 18px;
+                transform: scale(0);
+                transition: 
+                    transform 0.7s ease-in-out;
             }
         }
 
@@ -125,11 +151,9 @@ div.military-fortress_wrapper {
             height: 400px;
             width: 300px;
             border-radius: 15px;
-            border-top-right-radius: 15px;
             padding: 10px;
             transition: 
                 border-radius 0.85s 0.0s ease-in-out,
-                border-top-right-radius 0.3s,
                 height 0.7s 0.05s ease-in-out, width 0.7s 0.05s ease-in-out;
     
             div.military-fortress_content {
@@ -138,7 +162,43 @@ div.military-fortress_wrapper {
                 transition:         
                     opacity 0.5s 0s ease-in-out,
                     transform 0.7s 0.15s ease-in-out;
+                    
+                svg {
+                    transform: scale(1);
+                    transition:         
+                        transform 0.7s 0.15s ease-in-out;
+                }
+    
+                span.linkbtn {
+                    transform: scale(1);
+                    transition:         
+                        transform 0.7s 0.15s ease-in-out;
+                }
+    
+                span.military-fortress_descriptiontext {
+                    transform: scale(1);
+                    transition:         
+                        transform 0.7s 0.15s ease-in-out;
+                }
             }
+        }
+    }
+    div.military-fortress_information-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 50px; 
+        right: 100px;
+        justify-content: center;
+        align-items: center;
+        
+        fa {
+            color: $black;
         }
     }
 }
