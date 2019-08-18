@@ -90,7 +90,7 @@ export class MilitaryFortressComponent implements OnInit {
         },
         {
           id : 1,
-          title : "verschiedene Gasmasken",
+          title : "Verschiedene Gasmasken",
           text : "Da im Verlauf der Kriegsjahre ebenfalls Gasangriffe als zusätzliche Gefahr hinzukamen, wurden Gasmasken angeschafft.",
           path : "Fotos_Vitznau_022.jpg"
         },
@@ -117,7 +117,7 @@ export class MilitaryFortressComponent implements OnInit {
         },
         {
           id : 3,
-          title : "Original Werkbank",
+          title : "Originale Werkbank",
           text : "Die Ausstattung ist grösstenteils nach früherem Zustand erhalten geblieben.",
           path : "Fotos_Vitznau_009.jpg"
         },
@@ -210,7 +210,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Munitionslager I",
-          text : "Im Munitionslager für Stahlgranaten fanden etwa 17000 Stück ihren Platz. Die beiden Munitionslager waren die einzigen Räume, in denen das Rauchen verboten war. ",
+          text : "Im Munitionslager für Stahlgranaten fanden etwa 17000 Stück ihren Platz. Die beiden Munitionslager waren die einzigen Räume, in welchen das Rauchen verboten war. ",
           path : "Fotos_Vitznau_067.jpg"
         },
         {
@@ -246,7 +246,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Schiessstand mit Besatzung",
-          text : "Im Ernstfall hätte jede 4 Sekunde einen Schuss die Festung verlassen können. Dabei war das Tragen von Gasmasken wegen Vergiftungsgefahr obligatorisch.",
+          text : "Im Ernstfall hätten alle 4 Sekunden ein Schuss die Festung verlassen können. Dabei war das Tragen von Gasmasken wegen Vergiftungsgefahr obligatorisch.",
           path : "Fotos_Vitznau_072.jpg"
         },
         {
@@ -267,7 +267,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Weg zum Beobachtungsposten",
-          text : "Die lange Treppe führt zum einzigen Ort der Festung, der einen Blick nach aussen besitzt.",
+          text : "Die lange Treppe führt zum einzigen Ort der Festung, der einen Blick nach aussen erlaubt.",
           path : "Fotos_Vitznau_080.jpg"
         },
       ]
@@ -318,7 +318,7 @@ export class MilitaryFortressComponent implements OnInit {
         {
           id : 1,
           title : "Kommandozentrale",
-          text : "Hier wurden die Schüsse berechnet. Mit den vielen Utensilien konnten sie alle Winkel genau ausfindig machen, welche danach per Funk zu den Schiessständen übermittelt wurden.",
+          text : "Hier wurden die Schüsse berechnet. Mit den vielen Utensilien konnte man alle Winkel genau ausfindig machen, welche danach per Funk zu den Schiessständen übermittelt wurden.",
           path : "Fotos_Vitznau_054.jpg"
         },
         {
