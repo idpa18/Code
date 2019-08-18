@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DivComponent } from './div/div.component';
+import { MapFortressesComponent } from './views/map/map-fortresses/map-fortresses.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DivComponent } from './div/div.component';
     PersonDetailComponent,
     MenuComponent,
     LandingPageComponent,
-    DivComponent
+    DivComponent,
+    MapFortressesComponent
   ],
   imports: [
     BrowserModule,
