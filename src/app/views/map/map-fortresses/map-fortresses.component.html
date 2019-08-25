@@ -95,6 +95,18 @@
     </svg>
   </div>
 </div>
+<div class="map-switch">
+  <a routerLink="/karte/festungen">
+    <div class="map-switch-fortresses">
+      Bunker
+    </div>
+  </a>
+  <a routerLink="/karte/operationsbefehle">
+    <div class="map-switch-opbefs">
+      Operationsbefehle
+    </div>
+  </a>
+</div>
 <div class="map-fortress-area" *ngIf="showMapFortressArea">
   <div id="map-fortress-area-close" (click)="closeMap()">
     <fa name="times" size="lg"></fa>
@@ -215,7 +227,7 @@
 </div>
 <div class="sidebar">
   <div class="sidebar-header">
-    <h1>Schweizer Festungen</h1>
+    <h1 style="margin: 0px;">Schweizer Festungen</h1>
     <p>Auf dieser Karte sind die grössten Schweizer Festungen aufgeführt.</p>
     <p><b>Grosse Festungsräume:</b></p>
     <div class="fortress-area" (click)="openMap(1)">

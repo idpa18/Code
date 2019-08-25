@@ -1,0 +1,97 @@
+.map-main {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(../../../../assets/map/background.png);
+  background-size: 100%;
+
+  svg {
+    display: block;
+    height: auto;
+    width: calc(100vw - 450px);
+    max-height: 100vh;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+  }
+}
+
+.map {
+
+  .map-opbef {
+    display: none;
+  }
+
+  .map-opbef-first {
+    display: initial;
+  }
+  
+}
+
+.sidebar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: calc(100vh - 40px);
+  width: 450px;
+
+  .sidebar-header {
+    height: 320px;
+    overflow-y: scroll;
+  }
+
+  .sidebar-list {
+    height: calc(100% - 340px);
+    overflow-y: scroll;
+  }
+
+  .sidebar-header,
+  .sidebar-list {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+}
+
+.opbefs-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.opbefs-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #e2e2e2;
+  border-left: 10px solid transparent;
+  cursor: pointer;
+
+  &:first-child {
+    border-top: 1px solid #e2e2e2;
+  }
+}
+
+.opbefs-list-item-active, .opbefs-list-item:hover {
+  border-left: 10px solid #da3636;
+  font-weight: bold;
+}
+
+.map-switch {
+  position: absolute;
+  top: 50px;
+  right: 490px;
+  font-weight: bold;
+
+  a {
+    color: inherit;
+  }
+
+  div {
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: white;
+    cursor: pointer;
+  }
+}

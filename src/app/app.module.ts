@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DivComponent } from './div/div.component';
 import { MapFortressesComponent } from './views/map/map-fortresses/map-fortresses.component';
+import { MapOpbefsComponent } from './views/map/map-opbefs/map-opbefs.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MapFortressesComponent } from './views/map/map-fortresses/map-fortresse
     MenuComponent,
     LandingPageComponent,
     DivComponent,
-    MapFortressesComponent
+    MapFortressesComponent,
+    MapOpbefsComponent
   ],
   imports: [
     BrowserModule,

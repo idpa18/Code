@@ -6,11 +6,13 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MapFortressesComponent } from "./views/map/map-fortresses/map-fortresses.component";
 import { DivComponent } from './div/div.component';
 import { PersonDetailComponent } from './views/person/person-detail/person-detail.component';
+import { MapOpbefsComponent } from './views/map/map-opbefs/map-opbefs.component';
 
 const routes: Routes = [
   { path: "festung-vitznau", component: MilitaryFortressComponent },
   { path: "personen", component: PersonOverviewComponent },
   { path: "karte/festungen", component: MapFortressesComponent },
+  { path: "karte/operationsbefehle", component: MapOpbefsComponent },
   { path: "person/:person", component: PersonDetailComponent },
   { path: "home", component: LandingPageComponent },
   {
