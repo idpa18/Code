@@ -1,9 +1,12 @@
 <div class="person-detail_outer">
   <a routerLink="/personen" class="linkbtn">❮ ZURÜCK</a>
   <div class="person-detail_wrapper">
-    <div
-      class="person-detail_image"
-      [ngStyle]="{ backgroundImage: 'url(assets/person/' + currentPersonDetailItem.imagePath + ')' }"></div>
+    <div class="person-detail-picture_wrapper">
+      <div
+        class="person-detail_image"
+        [ngStyle]="{ backgroundImage: 'url(assets/person/' + currentPersonDetailItem.imagePath + ')' }"></div>
+      Abb. {{ 1 + currentPersonDetailItem.id }}
+    </div>
     <div class="person-detail_text">
       <h1>{{ currentPersonDetailItem.personName }}</h1>
       <p *ngFor="let paragraph of currentPersonDetailItem.paragraphs">

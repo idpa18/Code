@@ -16,11 +16,10 @@
 }
 
 .person-detail_image {
-  width: 50%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 50px;
+  height: 100%;
 }
 
 .person-detail_text {
@@ -28,4 +27,12 @@
   margin-left: 50px;
   background-color: white;
   overflow-y: auto;
+}
+
+.person-detail-picture_wrapper{
+  margin-right: 50px;
+  width: 50%;
+  overflow: hidden;
+  display: flex; 
+  flex-flow: column
 }
