@@ -12,6 +12,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DivComponent } from './div/div.component';
 import { MapFortressesComponent } from './views/map/map-fortresses/map-fortresses.component';
 import { MapOpbefsComponent } from './views/map/map-opbefs/map-opbefs.component';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MapOpbefsComponent } from './views/map/map-opbefs/map-opbefs.component'
   imports: [
     BrowserModule,
     AngularFontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent],
