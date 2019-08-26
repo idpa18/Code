@@ -28,6 +28,34 @@
   
 }
 
+.legend {
+  border-radius: 15px;
+  background-color: white;
+  height: 50px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  .color{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+
+    .colorbox {
+      margin-right: 10px;
+      height:30px;
+      width: 30px;
+      background-color: green;
+      border-radius: 100%;
+    }
+  }
+}
+
 .sidebar {
   position: absolute;
   right: 20px;
